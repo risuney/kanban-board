@@ -35,6 +35,7 @@ $(function(){
   $('#column4').find('.column-opt').find('.column-title').text(column4_t);
   $('#column5').find('.column-opt').find('.column-title').text(column5_t);
   $('.bord-title').text(board_t);
+  $('title').text(board_t + ' / Kanban')
 });
 
 setInterval(function(){
@@ -71,4 +72,5 @@ setInterval(function(){
   localStorage.setItem('column3_class+'+tn, column3_class);
   localStorage.setItem('column4_class+'+tn, column4_class);
   localStorage.setItem('column5_class+'+tn, column5_class);
+  localStorage.setItem('columnid+'+tn, columnidnum);
 },1000);

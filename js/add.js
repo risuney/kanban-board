@@ -3,9 +3,11 @@ var url = location.href;
 var index = url.indexOf('?');
 var tn = url.slice(index + 1);
 var cardid = localStorage.getItem('cardid+'+tn);
+var columnidnum = localStorage.getItem('columnid+'+tn);
 
 if (cardid == undefined) {
-  cardid = 1
+  cardid = 1;
+  columnidnum = 1;
 }
 
 $(document).on('click', '.modal-add-card', function(){
@@ -41,14 +43,14 @@ $('#edit-card-save').on('click', function(){
 
 // Add column
 
-var columnidnum = 1;
-
 $('#modal-add-column').on('click', function(){
   var text = $(this).prev().val();
   var columnid = '#column'+columnidnum;
   $(columnid).removeClass('hidden');
   $(columnid).find('.column-opt').find('.column-title').text(text);
   columnidnum++;
+  $(this).prev().val('');
+  $('.add-column-modal').removeClass('is-active');
 });
 
 // Edit column
