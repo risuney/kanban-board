@@ -32,3 +32,18 @@ $(function(){
     $('.list').append(list_item);
   }
 });
+
+$('.set-icon').on('click', function(){
+  $('#setting').addClass('is-active')
+});
+
+$('#delete-data').on('click', function(){
+  confirm('Are you sure you want to delete all the data?');
+  if (true) {
+    localStorage.clear();
+    $('#setting').removeClass('is-active');
+    location.reload();
+  } else {
+    $('#setting').removeClass('is-active')
+  }
+})
