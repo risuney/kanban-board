@@ -2,69 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>KANBAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Home / Kanban</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="shortcut icon" href="./icon/icon.ico">
   </head>
   <body>
     <header>
       <img src="./icon/simple-icon.svg" alt="" class="icon"><p class="title">Kanban board</p>
+      <img src="./icon/set.svg" class="set-icon">
     </header>
-    <div class="contents">
-      <div class="opt">
-        <img src="./icon/board.svg" class="icon-32"><p class="bord-title"></p>
-        <button type="button" class="edit-bord right" title="Edit bord"><img src="./icon/option.svg" class="icon-20"></button>
-        <button type="button" class="add-column right" title="Add column"><img src="./icon/plus.svg" class="icon-20"></button>
-      </div>
-      <div class="bord">
-        <div class="column" id="column1"><column-opt></column-opt><column-c></column-c></div>
-        <div class="column" id="column2"><column-opt></column-opt><column-c></column-c></div>
-        <div class="column" id="column3"><column-opt></column-opt><column-c></column-c></div>
-        <div class="column" id="column4"><column-opt></column-opt><column-c></column-c></div>
-        <div class="column" id="column5"><column-opt></column-opt><column-c></column-c></div>
-      </div>
-    </div>
-    <div id="load">
-
-    </div>
     <div id="home">
-
-    </div>
-    <div class="modal edit-card-modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="modal-title">Edit card</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <button type="button" class="ok" id="edit-card-save">Save</button>
-        <button type="button" class="cancel">Cancel</button>
-        <button type="button" class="delete" id="edit-card-delete">Delete this card</button>
+      <div class="app-i">
+        <img src="./icon/icon.svg" class="app-icon"><p class="app-i-t">Kanban board</p>
+      </div>
+      <div class="board-list">
+        <div class="list-title">
+          <p class="l-t-t">Board list</p>
+        </div>
+        <div class="list">
+          <div class="list-opt">
+            <button type="button" class="add-board" title="Add new board">
+              <img src="./icon/plus.svg" class="nbimg">
+              <span class="n-b">New board</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="modal edit-column-modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="modal-title">Edit column</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <button type="button" class="ok" id="edit-column-save">Save</button>
-        <button type="button" class="cancel">Cancel</button>
-        <button type="button" class="delete" id="edit-column-delete">Delete this column</button>
-      </div>
-    </div>
-    <div class="modal add-column-modal">
+    <div class="modal" id="add-board">
       <div class="modal-background"></div>
       <div class="modal-content">
         <p class="modal-title">Add column</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <button type="button" class="ok" id="modal-add-column">Add column</button>
+        <input type="text" placeholder="Board name">
+        <button type="button" class="ok" id="modal-add-board">Add new board</button>
+        <button type="button" class="cancel">Cancel</button>
+      </div>
+    </div>
+    <div class="modal" id="setting">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <p class="modal-title">Settings</p>
+        <button type="button" class="delete" id="delete-data">Delete all data</button>
         <button type="button" class="cancel">Cancel</button>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="./js/rendering.js" charset="utf-8"></script>
-    <script src="./js/style.js" charset="utf-8"></script>
-    <script src="./js/add.js" charset="utf-8"></script>
-    <script src="./js/storage.js" charset="utf-8"></script>
+    <script src="./js/home.js" charset="utf-8"></script>
   </body>
 </html>

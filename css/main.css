@@ -49,7 +49,7 @@ header {
   margin-bottom: 16px;
 }
 
-.bord-title {
+.board-title {
   font-size: 18px;
   display: inline-block;
   margin-left: 6px;
@@ -78,7 +78,7 @@ header {
   float: right;
 }
 
-.bord {
+.board {
   height: calc(100% - 89px);
   padding: 0 30px;
   display: flex;
@@ -87,16 +87,16 @@ header {
   white-space:nowrap;
 }
 
-.bord::-webkit-scrollbar {
+.board::-webkit-scrollbar {
   height: 14px;
 }
 
-.bord::-webkit-scrollbar-thumb {
+.board::-webkit-scrollbar-thumb {
   border-radius: 7px;
   background-color: #c2bfbf
 }
 
-.bord::-webkit-scrollbar-button {
+.board::-webkit-scrollbar-button {
   background-color: #fff
 }
 
@@ -169,7 +169,7 @@ header {
   padding: 1px 6px;
 }
 
-.edit-bord,.add-column {
+.edit-board,.add-column {
   background-color: transparent;
   border: none;
   outline: none;

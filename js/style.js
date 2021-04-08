@@ -3,6 +3,11 @@ $('.column-c').sortable({
   items: '.card'
 });
 
+$('.edit-board').on('click', function(){
+  $('.edit-board-modal').addClass('is-active');
+});
+
+
 $(document).on('click', '.cancel,.modal-background', function(){
   $('.modal').removeClass('is-active');
   $('.modal').removeAttr('id');

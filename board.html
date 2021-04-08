@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Board / Kanban</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+     <link rel="shortcut icon" href="./icon/icon.ico">
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="./icon/simple-icon.svg" alt="" class="icon"><p class="title">Kanban board</p>
+      </a>
+    </header>
+    <div class="contents">
+      <div class="opt">
+        <img src="./icon/board.svg" class="icon-32"><p class="board-title"></p>
+        <button type="button" class="edit-board right" title="Edit board"><img src="./icon/option.svg" class="icon-20"></button>
+        <button type="button" class="add-column right" title="Add column"><img src="./icon/plus.svg" class="icon-20"></button>
+      </div>
+      <div class="board">
+        <div class="column" id="column0"><column-opt></column-opt><column-c></column-c></div>
+        <div class="column" id="column1"><column-opt></column-opt><column-c></column-c></div>
+        <div class="column" id="column2"><column-opt></column-opt><column-c></column-c></div>
+        <div class="column" id="column3"><column-opt></column-opt><column-c></column-c></div>
+        <div class="column" id="column4"><column-opt></column-opt><column-c></column-c></div>
+      </div>
+    </div>
+    <div id="modal">
+      <edit-card-modal></edit-card-modal>
+      <edit-column-modal></edit-column-modal>
+      <add-column-modal></add-column-modal>
+      <edit-board-modal></edit-board-modal>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./js/rendering.js" charset="utf-8"></script>
+    <script src="./js/style.js" charset="utf-8"></script>
+    <script src="./js/add.js" charset="utf-8"></script>
+    <script src="./js/storage.js" charset="utf-8"></script>
+  </body>
+</html>
