@@ -87,7 +87,7 @@ $('#edit-column-delete').on('click', function(){
 
 $('#edit-board-save').on('click', function(){
   var text = $(this).prev().val();
-  $('.bord-title').text(text);
+  $('.board-title').text(text);
   $(this).prev().val('');
   $('.edit-board-modal').removeClass('is-active');
 });

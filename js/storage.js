@@ -26,7 +26,7 @@ $(function(){
     // ボードのタイトル取得
     var board_t = localStorage.getItem('board_t+'+tn);
     // .text()
-    $('.bord-title').text(board_t);
+    $('.board-title').text(board_t);
     // <title></title>にぶち込む
     $('title').text(board_t + ' / Kanban');
   };
@@ -52,7 +52,7 @@ setInterval(function(){
     localStorage.setItem('column'+i+'_t+'+tn, column_t);
 
     // ボードのタイトル取得
-    var board_t = $('.bord-title').text();
+    var board_t = $('.board-title').text();
     // 反映
     localStorage.setItem('board_t+'+tn, board_t);
     // カードの現在のid

@@ -3,7 +3,7 @@ $('.column-c').sortable({
   items: '.card'
 });
 
-$('.edit-bord').on('click', function(){
+$('.edit-board').on('click', function(){
   $('.edit-board-modal').addClass('is-active');
 });
 

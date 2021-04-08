@@ -22,11 +22,11 @@ Vue.component('column-c', {
 });
 
 var columnopt = new Vue ({
-  el: '.bord'
+  el: '.board'
 });
 
 var columnc = new Vue ({
-  el: '.bord'
+  el: '.board'
 });
 
 var modal = new Vue ({
