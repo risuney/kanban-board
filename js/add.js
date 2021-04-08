@@ -7,7 +7,7 @@ var columnidnum = localStorage.getItem('columnid+'+tn);
 
 if (cardid == undefined) {
   cardid = 1;
-  columnidnum = 1;
+  columnidnum = 0;
 }
 
 $(document).on('click', '.modal-add-card', function(){
