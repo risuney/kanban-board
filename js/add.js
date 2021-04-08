@@ -1,3 +1,9 @@
+$(function(){
+  if (cardid == 1) {
+    $('.column').addClass('hidden')
+  }
+})
+
 // Add card
 var url = location.href;
 var index = url.indexOf('?');
@@ -77,8 +83,11 @@ $('#edit-column-delete').on('click', function(){
   $('.edit-column-modal').removeAttr('id');
 });
 
-$(function(){
-  if (cardid == 1) {
-    $('.column').addClass('hidden')
-  }
-})
+//Edit board
+
+$('#edit-board-save').on('click', function(){
+  var text = $(this).prev().val();
+  $('.bord-title').text(text);
+  $(this).prev().val('');
+  $('.edit-board-modal').removeClass('is-active');
+});
