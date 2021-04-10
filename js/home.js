@@ -15,7 +15,7 @@ $('#modal-add-board').on('click', function(){
   var text = $(this).prev().val();
   localStorage.setItem('board_t+'+llen, text);
   var url = 'board.html?'+llen
-  var list_item = '<div class="list-item"><a class="l-i-t" href="'+url+'">'+text+'</a></div>';
+  var list_item = '<a href="'+url+'"><div class="list-item"><p class="l-i-t">'+text+'</p></div></a>';
   $('.list').append(list_item);
   $(this).prev().val('');
   $('.edit-column-modal').removeClass('is-active');
@@ -28,7 +28,7 @@ $(function(){
   var bnum = localStorage.getItem('board_num');
   for ( var i = 0; i<bnum ; i++) {
     var text = localStorage.getItem('board_t+'+i);
-    var list_item = '<div class="list-item"><a class="l-i-t" href="board.html?'+i+'">'+text+'</a></div>';
+    var list_item = '<a href="board.html?'+i+'"><div class="list-item"><p class="l-i-t">'+text+'</p></div></a>';
     $('.list').append(list_item);
   }
 });
@@ -46,4 +46,4 @@ $('#delete-data').on('click', function(){
   } else {
     $('#setting').removeClass('is-active')
   }
-})
+});
