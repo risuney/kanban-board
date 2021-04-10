@@ -93,6 +93,12 @@ button {
 .ok {
   background-color: #5d94e1;
   color: #fff;
+  transition: 0.3s;
+}
+
+.ok:hover {
+  background-color: #4a83d4;
+  transition: 0.3s;
 }
 
 .delete {
