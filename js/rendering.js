@@ -3,18 +3,18 @@ Vue.component('column-opt', {
 });
 
 Vue.component('edit-card-modal', {
-  template: '<div class="modal edit-card-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit card</p><textarea name="name" rows="8" cols="80"></textarea><button type="button" class="ok" id="edit-card-save">Save</button><button type="button" class="cancel">Cancel</button><button type="button" class="delete" id="edit-card-delete">Delete this card</button></div></div>'
+  template: '<div class="modal edit-card-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit card</p><textarea name="name" rows="8" cols="80" id="e-ca-t"></textarea><button type="button" class="ok" id="edit-card-save">Save</button><button type="button" class="cancel">Cancel</button><button type="button" class="delete" id="edit-card-delete">Delete this card</button></div></div>'
 });
 
 Vue.component('edit-column-modal', {
-  template: '<div class="modal edit-column-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit column</p><textarea name="name" rows="8" cols="80"></textarea><button type="button" class="ok" id="edit-column-save">Save</button><button type="button" class="cancel">Cancel</button><button type="button" class="delete" id="edit-column-delete">Delete this column</button></div></div>'
+  template: '<div class="modal edit-column-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit column</p><textarea name="name" rows="8" cols="80" id="e-co-t"></textarea><button type="button" class="ok" id="edit-column-save">Save</button><button type="button" class="cancel">Cancel</button><button type="button" class="delete" id="edit-column-delete">Delete this column</button></div></div>'
 });
 Vue.component('add-column-modal', {
   template: '<div class="modal add-column-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Add column</p><textarea name="name" rows="8" cols="80"></textarea><button type="button" class="ok" id="modal-add-column">Add column</button><button type="button" class="cancel">Cancel</button></div></div>'
 });
 
 Vue.component('edit-board-modal', {
-  template: '<div class="modal edit-board-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit board</p><input type="text"><button type="button" class="ok" id="edit-board-save">Save</button><button type="button" class="cancel">Cancel</button></div></div>'
+  template: '<div class="modal edit-board-modal"><div class="modal-background"></div><div class="modal-content"><p class="modal-title">Edit board</p><input type="text" id="e-b-t"><button type="button" class="ok" id="edit-board-save">Save</button><button type="button" class="cancel">Cancel</button></div></div>'
 })
 
 Vue.component('column-c', {
