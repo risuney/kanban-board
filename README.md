@@ -11,8 +11,8 @@ The board cannot be deleted at this time, but all data can be deleted.
 Please do not write important content in this Kanban. We do not take any responsibility even if important contents are deleted. Please use Kanban after understanding it.
 
 # manual
-+ [English version] (https://github.com/risuney/kanban-board/blob/main/man/manual.md)
-+ [Japanese version] (https://github.com/risuney/kanban-board/blob/main/man/manual.jp.md)
++ [English version](https://github.com/risuney/kanban-board/blob/main/man/manual.md)
++ [Japanese version](https://github.com/risuney/kanban-board/blob/main/man/manual.jp.md)
 
 # license
 [LICENSE](https://github.com/risuney/kanban-board/blob/main/LICENSE) is MIT License
