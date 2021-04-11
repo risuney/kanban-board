@@ -4,7 +4,7 @@ I referred to Kanban on GitHub.
 # Function
 All data is stored in the browser's local storage. In other words, unintended behavior can result in data being deleted.
 
-You can currently create up to 5 Columns.
+You can currently create up to 10 Columns.
 The board cannot be deleted at this time, but all data can be deleted.
 
 # caveat

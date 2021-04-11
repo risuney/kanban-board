@@ -3,7 +3,7 @@ var index = url.indexOf('?');
 var tn = url.slice(index + 1);
 
 $(function(){
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 10; i++) {
     var id = '#column'+i;
     var column = localStorage.getItem('column'+i+'+'+tn);
     $(id).find('.column-c').html(column);
@@ -18,7 +18,7 @@ $(function(){
 });
 
 setInterval(function(){
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 10; i++) {
     var id = '#column'+i;
     var column = $(id).find('.column-c').html();
     localStorage.setItem('column'+i+'+'+tn, column);
