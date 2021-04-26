@@ -88,6 +88,7 @@ $('#edit-column-delete').on('click', function(){
 $('#edit-board-save').on('click', function(){
   var text = $(this).prev().val();
   $('.board-title').text(text);
+  $('title').text(text + ' / Kanban');
   $(this).prev().val('');
   $('.edit-board-modal').removeClass('is-active');
 });
