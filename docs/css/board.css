@@ -73,6 +73,7 @@
 }
 
 .card {
+  display: flex;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   background-color: #fff;
@@ -104,4 +105,6 @@
 .card-c {
   display: inline-block;
   margin: 0;
+  white-space: break-spaces;
+  width: calc(100% - 26px);
 }
